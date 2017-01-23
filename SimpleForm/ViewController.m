@@ -200,7 +200,6 @@ NSString *PCString = @"";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    
     UITouch *touch = [[event allTouches] anyObject];
     if ([self.FNText isFirstResponder] && [touch view] != self.FNText) {
         [self.FNText resignFirstResponder];
